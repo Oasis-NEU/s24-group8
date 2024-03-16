@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #F8F3EC;
+    font-family: "Public Sans", sans-serif;
 }
 
 table.scrolldown {
@@ -55,6 +57,7 @@ td {
     padding-top: 5rem;
     padding-left: 2rem;
     margin: 0;
+    letter-spacing: -.25rem;
 }
 
 img {
@@ -72,4 +75,13 @@ img {
     display: table-cell;
     padding: .25rem;
     font-size: 1.25rem;
+}
+
+.articleTitle {
+    text-decoration: none;
+    color: black;
+}
+
+.articleTitle:hover {
+    color: grey;
 }
