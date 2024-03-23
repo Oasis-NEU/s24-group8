@@ -59,6 +59,7 @@ html {
   #middle {
       height: 50rem;
       width: 100%;
+      align-items: center;
   }
   
   #stat {
@@ -68,6 +69,7 @@ html {
       padding-top: 10rem;
   }
   
+
 /* 
   .c-direction-block {
       left: 0;
@@ -149,7 +151,7 @@ html {
       transform: translateX(-10vw) rotate(3deg)
   } */
 
-  .nextBody {
+  #nextBody {
       height: 50rem;
       width: 100%;
       text-align: center;
