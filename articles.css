@@ -9,7 +9,7 @@ table.scrolldown {
     width: 100%;
     /* border-collapse: collapse; */
     border-spacing: 0;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 /* To display the block as level element */
@@ -35,6 +35,8 @@ tbody td {
     width: 10%;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
+    padding: 0;
+    margin: 0;
     
 }
 
@@ -62,8 +64,10 @@ td {
 
 img {
     width: 100%;
+    object-fit: cover;
     padding: 0;
     margin: 0;
+    display: block;
 }
 
 .articleInformationContainer {
@@ -85,3 +89,30 @@ img {
 .articleTitle:hover {
     color: grey;
 }
+
+  #navbar {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    font-family: "Space Grotesk", sans-serif;
+    letter-spacing: .2rem;
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    float: right;
+  }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
