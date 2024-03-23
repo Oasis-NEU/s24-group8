@@ -8,25 +8,84 @@
     </head>
 <body>
 <!-- Insert navbar here -->
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #navbar {
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    float: right;
+  }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+</style>
+<div id="navbar">
+    <a style="text-decoration:none" href="minimal.html">MINIMAL</a>
+    <a style="text-decoration:none" href="grunge.html">GRUNGE</a>
+    <a style="text-decoration:none" href="aboutUs.html">ABOUT US</a>   
+    <a style="text-decoration:none" href="articles.html">ARTICLES</a>
+    <a style="text-decoration:none" href="quiz1.html">TAKE OUR QUIZ</a>
+    <a style="text-decoration:none" href="landingPage.html">HOME</a>
+</div>
 
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
 <!-- the heading --> 
 <div class="header">
     <h2>grunge</h2>
 </div>
 <table class="scrolldown" style="width: 33.3%; float:left">
-    
+
      <!-- Table body content -->
      <tbody>
         <!-- Row 1 -->
         <tr>
             <td>
+                <img src = leatherjacket.jpg class="center">
                 Leather Jacket
+                <p>
+                    ↑67%
+                </p>
             </td>
         </tr>
         <!-- Row 2 -->
         <tr>
             <td>
-                Doc Martens
+                <img src = graphict.jpg class="center">
+                Graphic Tees
+                <p>
+                    ↑50%
+                </p>
             </td>
         </tr>
 
@@ -38,13 +97,20 @@
        <!-- Row 1 -->
        <tr>
            <td>
+            <div id="jacket">
+            <img src = docmrtn.webp class="center">
+        </div>
             Doc Martens
+            <p>
+                ↑50%
+            </p>
            </td>
        </tr>
        <!-- Row 2 -->
        <tr>
            <td>
-               Doc Martens
+            <img src="leather boots.jpg" class="center">
+               Leather Boots
            </td>
        </tr>
 
@@ -56,13 +122,19 @@
        <!-- Row 1 -->
        <tr>
            <td>
+            <img src = skirt.webp class="center">
                Long Skirts
+               <p>
+                ↑20%
+            </p>
            </td>
+        
        </tr>
        <!-- Row 2 -->
        <tr>
            <td>
-               Doc Martens
+            <img src="cargo.jpg" class="center">
+               Cargo Pants
            </td>
        </tr>
 
