@@ -4,46 +4,45 @@
         .bodyPage {
             width: 100%;
             padding-top: 15rem;
+            
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            
         }
 
         .question1 {
             text-align: center;
         }
 
-        .button1 {
+        .btn {
             margin: 1rem;
             color: black;
             border: 0.1rem solid black;
             border-radius: 0.1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: block;
+            margin: auto;
             margin-top: 2rem;
+
         }
 
-        .button2 {
-            display: inline-block;
-            margin: 1rem;
-            color: black;
-            border: 0.1rem solid black;
-            border-radius: 0.1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 2rem;
+        .btn:hover {
+            background-color: black;
+            color: white;
         }
 
-        .button3 {
-            display: inline-block;
-            margin: 1rem;
-            color: black;
-            border: 0.1rem solid black;
-            border-radius: 0.1rem;
+        .buttonsQ1 {
+        
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .Q1 {
+            margin-left: auto;
+            margin-right: auto;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 2rem;
-        }  
+        }
 
         .nextQBtn {
             color: black;
@@ -54,31 +53,77 @@
             color: white;
         }
 
+        body {
+            background-color: #f1f1f1;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        #navbar {
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: block;
+            transition: top 0.3s;
+        }
+
+        #navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 17px;
+            float: right;
+            }
+
+        #navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        
+
     </style>
 
     <div class="bodyPage"></div>
         <div class="question1">
-            <h1>Which daily routine suits you best?</h1>
+            <h1>Are you a tidy person?</h1>
         </div>
         <div id="Q1">
             <div class="buttonsQ1">
-                 <!-- button1 to next question page -->
-                <div class="button1">
-                <a href="quiz3.html" 
-                 style="text-decoration:none"class="nextQBtn">PLACEHOLDER</a>
-                </div>
-                <!-- button2 to next question page -->
-                <div class="button2">
-                <a href="quiz3.html" 
-                style="text-decoration:none"class="nextQBtn">PLACEHOLDER</a>
-                </div>
-                <div class="button3">
-                <!-- button3 to next question page -->
-                <a href="quiz3.html" 
-                style="text-decoration:none"class="nextQBtn">PLACEHOLDER</a>
-                </div>
+                <a href="quiz3.html">
+                    <button class="btn"> Yes! </button>
+                    <button class="btn"> No! </button>
+                </a>
             </div>
         </div>
     </div>
+
+    <div id="navbar">
+        <a style="text-decoration:none" href="minimal.html">MINIMAL</a>
+        <a style="text-decoration:none" href="grunge.html">GRUNGE</a>
+        <a style="text-decoration:none" href="aboutUs.html">ABOUT US</a>   
+        <a style="text-decoration:none" href="articles.html">ARTICLES</a>
+        <a style="text-decoration:none" href="quiz1.html">TAKE OUR QUIZ</a>
+        <a style="text-decoration:none" href="landingPage.html">HOME</a></div>
+    
+    <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+    
 
 </html>

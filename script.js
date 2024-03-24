@@ -1,4 +1,5 @@
-const questions = [
+
+/*const questions = [
     {
         question: "What is your favorite color?",
         answers: [
@@ -71,3 +72,4 @@ function showQuestion() {
 }
 
 startQuiz();
+*/
