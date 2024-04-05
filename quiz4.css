@@ -14,13 +14,14 @@ body {
 }
 
 .bodyContainer {
-    margin-left: 5rem;
+    margin-left: 4rem;
     margin-right: 5rem;
 }
 
 .question1 {
     text-align: center;
-    padding-top: 7rem;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
 }
 
 .question-container {
@@ -40,7 +41,7 @@ body {
 }
 
 .buttons {
-    width: 15rem
+    width: 10rem
     
 }
 
