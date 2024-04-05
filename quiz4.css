@@ -1,11 +1,16 @@
-.html {
+html {
     font-family: "halyard-display", sans-serif;
     font-weight: 400;
     font-style: normal;
     background-color: #F8F1EA;
+    margin: 0;
+    padding: 0;
 }
-.body{
+
+body {
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .bodyContainer {
@@ -15,7 +20,7 @@
 
 .question1 {
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 7rem;
 }
 
 .question-container {
@@ -28,10 +33,15 @@
     padding-bottom: 1rem;
 }
 
-.images{
+.images {
     padding-top: 4rem;
     display: flex;
     justify-content: center;
+}
+
+.buttons {
+    width: 15rem
+    
 }
 
  #navbar {
