@@ -65,11 +65,11 @@ tbody td {
 table.fixed { table-layout:fixed; }
 table.fixed td { overflow: hidden; }
 
-img {
+/* img {
     object-fit: cover;
     display: block;
     width: 15rem;
-}
+} */
 
 #jacket {
     align-items: center;
@@ -80,14 +80,15 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-  } 
-  img {
+} 
+img {
+    object-fit: cover;
+    height: 17rem;
     border-radius: 10%;
-  }
-
-  p {
+}
+p {
     color:rgb(185, 170, 149);
     font-weight: 30;
     margin-top: 0%;
     padding-top: 0%
-  }
+}
