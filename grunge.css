@@ -9,7 +9,7 @@ table.scrolldown {
     width: 100%;
     /* border-collapse: collapse; */
     border-spacing: 0;
-    border: 2px solid black;
+    border: 1px solid black;
     
 }
 
@@ -31,45 +31,64 @@ table.scrolldown tbody {
     overflow-y: auto;
     /* Hide the horizontal scroll */
     overflow-x: hidden;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 tbody {
-    border-top: 2px solid black;
+    border-top: 1px solid black;
 }
 
 tbody td {
     width: 20%;
-    border-bottom: 2px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
     text-align: center;
     border: 0;
     align-items: center;
     font-family: "Public Sans", sans-serif;
-    font-size: 1.25rem;
-    font-weight: bold;
+    font-size: 1.75rem;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    padding-bottom: 2rem;
 }
     
 .header {
+    font-family: 'Public Sans';
     background-color: #F8F3EC;
     width: 100%;
     height: 13rem;
-    margin: 0;
     padding: 0;
+    margin-left: 3rem;
+    display: inline-flex;
 }
 .header h2 {
-    font-size: 6rem;
-    padding-top: 5rem;
+    font-size: 6.5rem;
+    padding-top: 4.4rem;
     padding-left: 2rem;
-    margin: 0;
-    letter-spacing: -.25rem;
+    margin: 0 3rem 0 0;
+    letter-spacing: -.35rem;
+    font-weight: 800;
 }
+
+.captionText {
+    font-family: 'Public Sans';
+    font-size: .95rem;
+    color: black;
+    font-weight: 300;
+    padding-top: 7rem;
+    width: 50%;
+    line-height: 1.4rem;
+}
+
+
 table.fixed { table-layout:fixed; }
 table.fixed td { overflow: hidden; }
 
-img {
+/* img {
     object-fit: cover;
     display: block;
     width: 15rem;
-}
+} */
 
 #jacket {
     align-items: center;
@@ -80,14 +99,34 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-  } 
-  img {
+} 
+img {
+    object-fit: cover;
+    height: 17rem;
     border-radius: 10%;
-  }
-
-  p {
+    margin-bottom: 0.5rem;
+}
+p {
     color:rgb(185, 170, 149);
     font-weight: 30;
     margin-top: 0%;
-    padding-top: 0%
-  }
+    padding-top: 0%;
+}
+.tag {
+    margin-top: .50rem;
+    letter-spacing: 2px;
+    border: 1px solid #83817D;
+    border-radius: 50px;
+    color: black;
+    font-weight: 300;
+    font-size: .8rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+    justify-content: center;
+    width: 5rem;
+    
+}

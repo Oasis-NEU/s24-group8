@@ -5,6 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Articles</title>
         <link rel="stylesheet" href="grunge.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     </head>
 <body>
 <!-- Insert navbar here -->
@@ -21,6 +27,8 @@ body {
     width: 100%;
     display: block;
     transition: top 0.3s;
+    font-family: 'Space Grotesk';
+    letter-spacing: .2rem;
   }
   
   #navbar a {
@@ -40,9 +48,9 @@ body {
   }
 </style>
 <div id="navbar">
+    <a style="text-decoration:none" href="aboutUs.html">ABOUT US</a> 
     <a style="text-decoration:none" href="minimal.html">MINIMAL</a>
-    <a style="text-decoration:none" href="grunge.html">GRUNGE</a>
-    <a style="text-decoration:none" href="aboutUs.html">ABOUT US</a>   
+    <a style="text-decoration:none" href="grunge.html">GRUNGE</a>   
     <a style="text-decoration:none" href="articles.html">ARTICLES</a>
     <a style="text-decoration:none" href="quiz1.html">TAKE OUR QUIZ</a>
     <a style="text-decoration:none" href="landingPage.html">HOME</a>
@@ -63,6 +71,8 @@ var currentScrollPos = window.pageYOffset;
 <!-- the heading --> 
 <div class="header">
     <h2>grunge</h2>
+    <p class="captionText">Immerse yourself in grunge fashion with our curated selection of edgy style. Discover distressed denim, plaid shirts, and vintage band tees. Embrace rugged textures, dark hues, and oversized silhouettes for an urban edge.</p>
+
 </div>
 <table class="scrolldown" style="width: 33.3%; float:left">
 
@@ -73,19 +83,19 @@ var currentScrollPos = window.pageYOffset;
             <td>
                 <img src = leatherjacket.jpg class="center">
                 Leather Jacket
-                <p>
-                    ↑67%
-                </p>
+                <div class="centerAttempt"></div>
+               <p class="tag">VERSATILE</p>
+               </div>
             </td>
         </tr>
         <!-- Row 2 -->
         <tr>
             <td>
-                <img src = graphict.jpg class="center">
+                <img src = bandT.png class="center">
                 Graphic Tees
-                <p>
-                    ↑50%
-                </p>
+                <div class="centerAttempt"></div>
+               <p class="tag">THRIFTABLE</p>
+               </div>
             </td>
         </tr>
 
@@ -98,19 +108,22 @@ var currentScrollPos = window.pageYOffset;
        <tr>
            <td>
             <div id="jacket">
-            <img src = docmrtn.webp class="center">
+            <img src = "docmtrn.webp  "class="center">
         </div>
             Doc Martens
-            <p>
-                ↑50%
-            </p>
+            <div class="centerAttempt"></div>
+               <p class="tag">DURABLE</p>
+               </div>
            </td>
        </tr>
        <!-- Row 2 -->
        <tr>
            <td>
-            <img src="leather boots.jpg" class="center">
-               Leather Boots
+            <img src="onitsuka.webp" class="center">
+               Classic Sneaker
+               <div class="centerAttempt"></div>
+               <p class="tag">THRIFTABLE</p>
+               </div>
            </td>
        </tr>
 
@@ -122,11 +135,11 @@ var currentScrollPos = window.pageYOffset;
        <!-- Row 1 -->
        <tr>
            <td>
-            <img src = skirt.webp class="center">
+            <img src = jeanSkirt.webp class="center">
                Long Skirts
-               <p>
-                ↑20%
-            </p>
+               <div class="centerAttempt"></div>
+               <p class="tag">THRIFTABLE</p>
+               </div>
            </td>
         
        </tr>
@@ -135,6 +148,9 @@ var currentScrollPos = window.pageYOffset;
            <td>
             <img src="cargo.jpg" class="center">
                Cargo Pants
+               <div class="centerAttempt"></div>
+               <p class="tag">DURABLE</p>
+               </div>
            </td>
        </tr>
 
