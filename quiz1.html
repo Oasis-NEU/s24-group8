@@ -1,62 +1,91 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        .bodyPage {
-            width: 100%;
-            padding-top: 15rem;
-        }
-
-        .question {
-            text-align: center;
-        }
-        .answer-buttons {
-            display: flex;
-            justify-content: center;
-         
-        }
-        
-        .nextQBtn {
-            color: black;
-            margin-left: 2rem;
-        }
-
-        .nextQBtn:hover {
-            background-color: black;
-            color: white;
-        }
-        
-        body {
-            margin: 0;
-            background-color: #f1f1f1;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        #navbar {
-            background-color: #333;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            display: block;
-            transition: top 0.3s;
-        }
-
-        #navbar a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 15px;
-            text-decoration: none;
-            font-size: 17px;
-            float: right;
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Articles</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+        <style>
+            html, body {
+                font-family: 'Public Sans', sans-serif;
+                background-color: #F8F3EC;
+                width: 100%;
             }
-
-        #navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-    </style>
-
+            .bodyPage {
+                width: 100%;
+                padding-top: 15rem;
+            }
+    
+            .question {
+                text-align: center;
+                font-family: 'Public Sans', sans-serif;
+                font-size: 1rem;
+            }
+            .answer-buttons {
+                display: flex;
+                justify-content: center;
+             
+            }
+            
+            .nextQBtn {
+                background-color: transparent;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                font-size: 1rem;
+                padding: .5rem 1.5rem .5rem 1.5rem;
+                font-family: 'Space Grotesk', sans-serif;
+                border: 2px solid black;
+                letter-spacing: .2rem;
+                font-weight: 500;
+            }
+    
+    
+            .nextQBtn:hover {
+                background-color: black;
+                color: white;
+            }
+            
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+    
+            body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #navbar {
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    font-family: 'Space Grotesk';
+    letter-spacing: .2rem;
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    float: right;
+  }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+        </style>
+    </head>
+<body>
     <div class="bodyPage"></div>
         <div class="question">
             <div class="Q1"></div>
@@ -66,25 +95,26 @@
         <div class="answer-buttons">
              <!-- button1 to next question page -->
                 <a href="quiz2.html">
-                    <button class="nextQBtn"> 1-2 Pairs </button>
+                    <button class="nextQBtn"> 1-2 PAIRS </button>
                 </a>
                 <a href="quiz2.html">
-                    <button class="nextQBtn"> 3-4 Pairs </button>
+                    <button class="nextQBtn"> 3-4 PAIRS </button>
                 </a>
                 <a href="quiz2.html">
-                    <button class="nextQBtn"> 4+ Pairs </button>
+                    <button class="nextQBtn"> 4+ PAIRS </button>
                 </a>
             </div>
         </div>
     </div>
 
     <div id="navbar">
+        <a style="text-decoration:none" href="aboutUs.html">ABOUT US</a> 
         <a style="text-decoration:none" href="minimal.html">MINIMAL</a>
-        <a style="text-decoration:none" href="grunge.html">GRUNGE</a>
-        <a style="text-decoration:none" href="aboutUs.html">ABOUT US</a>   
+        <a style="text-decoration:none" href="grunge.html">GRUNGE</a>  
         <a style="text-decoration:none" href="articles.html">ARTICLES</a>
         <a style="text-decoration:none" href="quiz1.html">TAKE OUR QUIZ</a>
-        <a style="text-decoration:none" href="landingPage.html">HOME</a></div>
+        <a style="text-decoration:none" href="landingPage.html">HOME</a>
+    /div>
     
     <script>
     var prevScrollpos = window.pageYOffset;
@@ -99,5 +129,5 @@
     }
     </script>
     
-
+    </body>
 </html>

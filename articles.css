@@ -59,7 +59,8 @@ td {
     padding-top: 5rem;
     padding-left: 2rem;
     margin: 0;
-    letter-spacing: -.25rem;
+    letter-spacing: -.35rem;
+    font-weight: 800;
 }
 
 img {
