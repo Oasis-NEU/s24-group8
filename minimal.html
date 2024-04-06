@@ -1,1 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Articles</title>
+        <link rel="stylesheet" href="minimal.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    </head>
+<body>
+<!-- Insert navbar here -->
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #navbar {
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    font-family: 'Space Grotesk';
+    letter-spacing: .2rem;
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    float: right;
+  }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+</style>
+<div id="navbar">
+    <a style="text-decoration:none" href="aboutUs.html">ABOUT US</a> 
+    <a style="text-decoration:none" href="minimal.html">MINIMAL</a>
+    <a style="text-decoration:none" href="grunge.html">GRUNGE</a>  
+    <a style="text-decoration:none" href="articles.html">ARTICLES</a>
+    <a style="text-decoration:none" href="quiz1.html">TAKE OUR QUIZ</a>
+    <a style="text-decoration:none" href="landingPage.html">HOME</a>
+</div>
 
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+<!-- the heading --> 
+<div class="header">
+    <h2>minimal</h2>
+    <p class="captionText">Discover the minimalist chic with our curated collection of clean lines, neutral tones, and timeless designs. Embrace effortless elegance with versatile pieces that prioritize quality and sophistication.</p>
+
+</div>
+<table class="scrolldown" style="width: 33.3%; float:left">
+
+     <!-- Table body content -->
+     <tbody>
+        <!-- Row 1 -->
+        <tr>
+            <td>
+                <img src = trench.JPG class="center">
+                Trenchcoat
+                <br>
+                <div class="tagMultiple">
+                    <div class="centerAttempt">
+                        <p class="tag">THRIFTABLE</p>
+                    </div>
+                    <div class="centerAttempt">
+                        <p class="tag">DURABLE</p>
+                    </div>
+                </div>  
+            </td>
+        </tr>
+        <!-- Row 2 -->
+        <tr>
+            <td>
+                <img src = stripe.JPG class="center">
+                Striped Sweater
+                <div class="centerAttempt"></div>
+               <p class="bootsCenter">THRIFTABLE</p>
+               </div>
+            </td>
+        </tr>
+
+     </tbody>
+</table>
+<table class="scrolldown" style="width: 33.3%; float:left">
+    <!-- Table body content -->
+    <tbody>
+       <!-- Row 1 -->
+       <tr>
+           <td>
+            <div id="jacket">
+            <img src = boots.JPG class="center">
+        </div>
+            Boots
+            <br>
+            <div class="tagMultiple">
+                <div class="centerAttempt">
+                    <p class="tag">THRIFTABLE</p>
+                </div>
+                <div class="centerAttempt">
+                    <p class="tag">DURABLE</p>
+                </div>
+            </div>
+               </div>
+           </td>
+       </tr>
+       <!-- Row 2 -->
+       <tr>
+           <td>
+            <img src=veja.JPG class="center">
+               Classic Sneaker
+               <div class="centerAttempt"></div>
+               <p class="bootsCenter">DURABLE</p>
+               </div>
+           </td>
+       </tr>
+
+    </tbody>
+</table>
+<table class="scrolldown" style="width: 33.3%; float:left">
+    <!-- Table body content -->
+    <tbody>
+       <!-- Row 1 -->
+       <tr>
+           <td>
+            <img src = slacks.JPG class="center">
+               Slacks
+               <div class="centerAttempt"></div>
+               <p class="bootsCenter">THRIFTABLE</p>
+               </div>
+           </td>
+        
+       </tr>
+       <!-- Row 2 -->
+       <tr>
+           <td>
+            <img src=mediumWash.JPG class="center">
+               Medium Wash Jeans
+               <div class="tagMultiple">
+                <div class="centerAttempt">
+                    <p class="tag">THRIFTABLE</p>
+                </div>
+                <div class="centerAttempt">
+                    <p class="tag">DURABLE</p>
+                </div>
+            </div>
+               </div>
+           </td>
+       </tr>
+
+    </tbody>
+</table>
+</div>
+</body>
+</html>
