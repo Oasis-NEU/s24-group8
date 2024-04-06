@@ -1,84 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        .bodyPage {
-            width: 100%;
-            padding-top: 15rem;
-        }
+<head>
+    <title>Question 3 Page</title>
+    <link rel = "stylesheet" href="quiz4.css">
 
-        .question1 {
-            text-align: center;
-        }
+</head>
+<body>
+   
+    <script src="script.js"> </script>
 
-        .button1 {
-            margin: 1rem;
-            color: black;
-            border: 0.1rem solid black;
-            border-radius: 0.1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 2rem;
-        }
+    <div id="navbar">
+        <a style="text-decoration:none" href="minimal.html">MINIMAL</a>
+        <a style="text-decoration:none" href="grunge.html">GRUNGE</a>
+        <a style="text-decoration:none" href="aboutUs.html">ABOUT US</a>   
+        <a style="text-decoration:none" href="articles.html">ARTICLES</a>
+        <a style="text-decoration:none" href="quiz1.html">TAKE OUR QUIZ</a>
+        <a style="text-decoration:none" href="landingPage.html">HOME</a></div>
+    
+    <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
 
-        .button2 {
-            display: inline-block;
-            margin: 1rem;
-            color: black;
-            border: 0.1rem solid black;
-            border-radius: 0.1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 2rem;
-        }
 
-        .button3 {
-            display: inline-block;
-            margin: 1rem;
-            color: black;
-            border: 0.1rem solid black;
-            border-radius: 0.1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 2rem;
-        }  
+    <!-- the heading for the impact page --> 
+<div class="bodyContainer">  <!-- quiz --> 
+    <div class="question"> <!-- question --> 
+        <h1>Are you a tidy person?</h1>
+    </div>
 
-        .nextQBtn {
-            color: black;
-        }
-
-        .nextQBtn:hover {
-            background-color: black;
-            color: white;
-        }
-
-    </style>
-
-    <div class="bodyPage"></div>
-        <div class="question1">
-            <h1>Which daily routine suits you best?</h1>
+    <div class="images"> <!-- answer-buttons --> 
+        
+    <!-- question1 -->
+        <div id="Q2Q1">
+            <img class="col" src="clean room.jpeg" width=100% height= 50% > 
+            <button class="buttons"> Yes! </button>
+            </a>
         </div>
-        <div id="Q1">
-            <div class="buttonsQ1">
-                 <!-- button1 to next question page -->
-                <div class="button1">
-                <a href="quiz3.html" 
-                 style="text-decoration:none"class="nextQBtn">PLACEHOLDER</a>
-                </div>
-                <!-- button2 to next question page -->
-                <div class="button2">
-                <a href="quiz3.html" 
-                style="text-decoration:none"class="nextQBtn">PLACEHOLDER</a>
-                </div>
-                <div class="button3">
-                <!-- button3 to next question page -->
-                <a href="quiz3.html" 
-                style="text-decoration:none"class="nextQBtn">PLACEHOLDER</a>
-                </div>
-            </div>
+   
+    <!-- question2 -->
+        <div id="Q2Q2">
+            <img class="col" src="messyroom.jpeg" width=60% height= 50% > 
+            <button class="buttons"> No! </button>
+            </a>
         </div>
     </div>
+
+</div>
+
+<script src="script.js"> </script>
+
+    
+    
+</body>
 
 </html>

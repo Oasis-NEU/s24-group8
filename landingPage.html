@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="landingPage.css">
+    <meta charset="UTF-8" />
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+  />
+    <link rel="stylesheet" href="./landingPage.css">
 </head>
 <body>
-
-<div id="navbar">
-    <a style="text-decoration:none" href="minimal.html">MINIMAL</a>
-    <a style="text-decoration:none" href="grunge.html">GRUNGE</a>
-    <a style="text-decoration:none" href="aboutUs.html">ABOUT US</a>   
-    <a style="text-decoration:none" href="articles.html">ARTICLES</a>
-    <a style="text-decoration:none" href="quiz1.html">TAKE OUR QUIZ</a>
-    <a style="text-decoration:none" href="landingPage.html">HOME</a>
-</div>
-
-<div class="top">
-
-    <div class="Body1">
-            <img class="img1" src="placeholderImg.png" width=300rem height=500rem> 
+    <div id="navbar">
+        <a style="text-decoration:none" href="minimal.html">MINIMAL</a>
+        <a style="text-decoration:none" href="grunge.html">GRUNGE</a>
+        <a style="text-decoration:none" href="aboutUs.html">ABOUT US</a>   
+        <a style="text-decoration:none" href="articles.html">ARTICLES</a>
+        <a style="text-decoration:none" href="quiz1.html">TAKE OUR QUIZ</a>
+        <a style="text-decoration:none" href="landingPage.html">HOME</a>
     </div>
-
+    <div class="Body1">
+        <img class="img1" src="placeholderImg.png"> 
+    </div>
     <div class="Body2">
         <h2> Reimagining sustainability 
             & fashion </h2>
@@ -34,52 +35,51 @@
             <a href="#middle">Take a Look</a>    
     </div>
 
-
-</div>
-
 <div id="middle">
     <a href="middle"></a>
     <p id="stat"> More than $500 billion are lost every year due to lack of recycling and clothing utilization</p>
-    <a href=#nextBody> 
+   <a href=#nextBody> 
         <img class="scrollbtn" src="/img/scrollbutton.png" width=50rem height=50rem> 
-    </a> 
-</div>
-
-<!-- <div class="c-direction-block" id="direction">
-    <div class="c-direction-block_item -one">
-        <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="6" data-scroll-target="#direction">
-            I'm moving in this direction
-        </span>
-    </div>
-    <div class="c-direction-block_item -two">
-        <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-8" data-scroll-target="#direction">
-            And in this direction
-        </span>
-    </div>
-    <div class="c-direction-block_item -three">
-        <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="9" data-scroll-target="#direction" data-scroll-delay="0.05">
-            Sooo customizable. Right?
-        </span>
-    </div>
-    <div class="c-direction-block_item -four">
-        <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="15" data-scroll-target="#direction">
-            I can also go in this direction
-        </span>
-    </div>
-    <div class="c-direction-block_item -five">
-        <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-20" data-scroll-target="#direction" data-scroll-delay="0.05">
-            Ok, enough!!!!
-        </span>
-    </div>
-</div> -->
-
-<div id="nextBody"> 
+    </a>  
+</div> 
+<div data-scroll-container>
+    
+<section id="threeD" class="threeD" data-scroll-section>
+  <div id="nextBody"> 
     <h id="stat2">Fast fashion generated<br>more CO2 than aviation<br>and shipping combined</h>
     <p id="explanation"> The fashion industry is the second-largest industrial polluter, account for about 10% of global <br> pollution, ranking higher than emissions from air travel and maritime transport combined</p>
+  </div>
+    <div class="skewsec">
+      <div
+        data-scroll
+        data-scroll-direction="horizontal"
+        data-scroll-speed="20"
+        data-scroll-target="#threeD"
+      >
+        <span>Please--subscribe--my--channel</span>
+      </div>
+    </div>
+    <div class="skewsec">
+      <div
+        data-scroll
+        data-scroll-direction="horizontal"
+        data-scroll-speed="-20"
+        data-scroll-target="#threeD"
+      >
+        <span class="">Like---share---and---leave a comment</span>
+      </div>
+    </div>
 
-</div>
 
-<script>
+
+<!-- <div id="mainQuestion">
+    <div class="column" ><img src="img/bagFashion.jpeg"> </div>
+    <div> class="column" <img src="img/posterFashion.jpeg">  </div>
+
+</div> -->
+
+
+<!-- <script>
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
@@ -90,7 +90,10 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
-</script>
+</script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+<script src="./script.js"></script>
 
 </body>
 </html>
