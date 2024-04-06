@@ -3,28 +3,33 @@
     <style>
         .bodyPage {
             width: 100%;
-            padding-top: 15rem;
+            padding-top: 10rem;
         }
 
-        .question {
+        .question1 {
             text-align: center;
         }
-        .answer-buttons {
-            display: flex;
-            justify-content: center;
-         
-        }
-        
-        .nextQBtn {
-            color: black;
-            margin-left: 2rem;
+
+        .quizResult {
+            text-align: center;
         }
 
-        .nextQBtn:hover {
-            background-color: black;
-            color: white;
+        .styleAesthetic {
+            display: grid;
+            grid-template-columns: 1fr 0fr 1fr;
+            column-gap: -3rem;
+            color: #B2ABA4;
+            align-items: center;
+            text-align: center;
         }
-        
+
+        .imageColumn {
+            width: -16rem;
+            margin-left: 18rem;
+            align-items: center;
+            text-align: center;
+        }
+
         body {
             margin: 0;
             background-color: #f1f1f1;
@@ -55,26 +60,34 @@
             background-color: #ddd;
             color: black;
         }
+
     </style>
 
     <div class="bodyPage"></div>
-        <div class="question">
-            <div class="Q1"></div>
-                <h1>How many shoes do you own?</h1>
-            </div>
+        <div class="question1">
+            <h1>Hmm.. we think you'd like this the best.</h1>
         </div>
-        <div class="answer-buttons">
-             <!-- button1 to next question page -->
-                <a href="quiz2.html">
-                    <button class="nextQBtn"> 1-2 Pairs </button>
-                </a>
-                <a href="quiz2.html">
-                    <button class="nextQBtn"> 3-4 Pairs </button>
-                </a>
-                <a href="quiz2.html">
-                    <button class="nextQBtn"> 4+ Pairs </button>
-                </a>
-            </div>
+
+        <div class="quizResult"> 
+            <p>
+                Seems like you're super interested in #vintage #grunge and #leather <break>
+                </break> Head over to our grunge collection to see what we suggest building in you 
+                <break> wardrobe! </break>
+            </p>
+        </div>
+
+        <!-- imageCredit -->
+    <div class="styleAesthetic">
+        <div class="imageColumn">
+            <img src="placeholderImg.png" width="300" height="200">
+            <p> Designated car park for families / Credit: Sandy Millar </p>
+        </div>
+        <div class="imageColumn">
+            <img src="placeholderImg.png" width="300" height="200">
+            <p> Woman walking in city / Credit: Ifrah Akhter </p>
+        </div>
+    </div>
+           
         </div>
     </div>
 
@@ -98,6 +111,5 @@
       prevScrollpos = currentScrollPos;
     }
     </script>
-    
 
 </html>
