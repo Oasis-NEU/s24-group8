@@ -21,7 +21,7 @@ body {
 .question {
     text-align: center;
     padding-top: 7rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
 
 .question-container {
@@ -38,6 +38,7 @@ body {
     padding-top: 4rem;
     display: flex;
     justify-content: center;
+    padding-left: 3rem;
 }
 
 .buttons {
@@ -69,3 +70,4 @@ body {
             background-color: #ddd;
             color: black;
         }
+
