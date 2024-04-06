@@ -15,13 +15,12 @@ body {
 
 .bodyContainer {
     margin-left: 5rem;
-    margin-right: 5rem;
+    margin-right: 4rem;
 }
 
 .question {
     text-align: center;
-    padding-top: 7rem;
-    padding-bottom: 2rem;
+    padding-top: 9rem;
 }
 
 .question-container {
@@ -42,9 +41,22 @@ body {
 }
 
 .buttons {
-    width: 10rem
-    
+    width: 16rem;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    display: flex;
 }
+
+.button-align {
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    display: flex;
+    padding-right: 2rem;
+
+}
+
 
  #navbar {
             background-color: #333;
