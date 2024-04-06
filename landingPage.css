@@ -80,6 +80,7 @@
     background-color: rgba(0,0,0,0.3);
     background-clip: content-box;
   } */
+
   #navbar {
     background-color: #333;
     position: fixed;
@@ -107,22 +108,35 @@
   }
 
 .img1 {
-    width: 90px;
-    height:90px;
+  padding-left: 10rem;
+  height: 70%;
 }
 
 .Body1 {
-    padding: 2rem 2rem 2rem 2rem;
-    width: 50%;
-    text-align: center;
-    margin-left: 100px;
+  margin-top: 10rem;
+  margin-bottom: 20rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.Body2 {
-    padding: 2rem 2rem 2rem 2rem;
-    width: 100%;
-    text-align: left;
+.colBody1 {
+  display: inline;
 }
+
+#middle {
+  margin-top: 5rem;
+  height: 40rem;
+  width: 100%;
+  margin-bottom: -50rem;
+}
+
+#stat {
+  font-size: 5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  padding-top: 1rem;
+}
+
 
   * {
     margin: 0;
@@ -149,40 +163,242 @@
   
   .threeD {
     width: 100%;
-    height: 500vh;
+    height: 600vh;
     display: grid;
     place-items: center;
     place-content: center;
     position: relative;
-    margin-top: 10vh;
-    padding-top: 10rem;
-    h {
-        width: 100%;
-        font-size: 12em;
-        font-family: Cannia;
-        font-weight: bold;
-        margin-top: 10px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        span {
-            display: inline-block;
-        }
-    }
+
   }
   
-  .skewsec {
-    transform: skew(15deg) rotate(6deg);
+  .skewsec1 {
+    transform: rotate(15deg);
+    z-index: 1;
     span {
-        display: inline-block;
-        background: burlywood;
-        padding: 13px 100px;
-        font-size: 3.5em;
-    }
-    &:last-child {
-        transform: skew(-15deg) reotate(-6deg);
-        margin-top: 33vh;
+        display: block;
+        color: white;
+        background: blue;
+        font-size: 6rem;
+        padding-inline-start: 25rem;
+        padding-inline-end: 25rem;
     }
   }
+  .skewsec2 {
+    transform: rotate(-5deg);
+    span {
+        display: inline-block;
+        color: white;
+        background: black;
+        font-size: 6rem;
+        padding-inline-start: 25rem;
+        padding-inline-end: 25rem;
+    }
+  }
+
+  .skewsec3 {
+    transform: rotate(-8deg);
+    z-index: 2;
+    span {
+        display: inline-block;
+        color: white;
+        background: gold;
+        font-size: 6rem;
+        padding-inline-start: 25rem;
+        padding-inline-end: 25rem;
+    }
+  }
+
+  .skewsec4 {
+    transform: rotate(2deg);
+    z-index: 1;
+    span {
+        display: inline-block;
+        color: white;
+        background: red;
+        font-size: 6rem;
+        padding-inline-start: 25rem;
+        padding-inline-end: 25rem;
+    }
+  }
+
+  .skewsec5 {
+    transform: rotate(5deg);
+    z-index: 2;
+    span {
+        display: inline-block;
+        color: white;
+        background: black;
+        font-size: 6rem;
+        padding-inline-start: 25rem;
+        padding-inline-end: 25rem;
+    }
+  }
+
+  .skewsec6 {
+    transform: rotate(-5deg);
+    span {
+        display: inline-block;
+        color: white;
+        background: blue;
+        font-size: 6rem;
+        padding-inline-start: 25rem;
+        padding-inline-end: 25rem;
+    }
+  }
+
+  .skewsec7 {
+    transform: rotate(-2deg);
+    span {
+        display: inline-block;
+        color: white;
+        background: gold;
+        font-size: 6rem;
+        padding-inline-start: 25rem;
+        padding-inline-end: 25rem;
+    }
+  }
+
+  .skewsec8 {
+    transform: rotate(5deg);
+    z-index: 2;
+    margin-top: -15rem;
+    span {
+        display: inline-block;
+        color: white;
+        background: red;
+        font-size: 6rem;
+        padding-inline-start: 25rem;
+        padding-inline-end: 25rem;
+    }
+  }
+#stat2 {
+    font-size: 5rem;
+    margin-top: 5rem;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+
+}
+
+#explanation {
+  padding-top: 10rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.imggal {
+  margin-left: 5rem;
+  margin-top: 30rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+#question {
+  margin-top: 10rem;
+  color: white;
+  background: black;
+  font-size: 3rem;
+
+  width: 70%;
+  text-align: center;
+  margin-left: 15rem;
+  margin-right: 15rem;
+
+
+}
+
+#answer {
+  margin-top: 5rem;
+  display: inline-block;
+  font-size: 3rem;
+  width: 70%;
+  text-align: center;
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+
+#article {
+  margin-left: 15rem;
+  margin-right: 15rem;
+  text-align: center;
+
+}
+.bodyContainer {
+  margin-top: 50px;
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1px; 
+
+}
+.articleBody {
+  border-radius: 1rem;
+  border: 0.1rem solid #111010;
+  padding: 2em 2em 2em 2em;
+  width: 20rem;
+  margin: 2rem;
+}
+
+.about {
+  margin-top: 1rem;
+  display: grid;
+  align-items: left; 
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1px; 
+}
+
+.title {
+  text-align: left;
+}
+
+/*! locomotive-scroll v3.1.7 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+html.has-scroll-smooth {
+  overflow: hidden;
+}
+html.has-scroll-dragging,
+html.has-scroll-dragging * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.has-scroll-smooth body {
+  overflow: hidden;
+}
+.c-scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 11px;
+  height: 100vh;
+  transform-origin: center right;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0;
+}
+.c-scrollbar:hover {
+  transform: scaleX(1.45);
+}
+.c-scrollbar:hover,
+.has-scroll-dragging .c-scrollbar,
+.has-scroll-scrolling .c-scrollbar {
+  opacity: 1;
+}
+.c-scrollbar_thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: gray;
+
+  width: 7px;
+
+  margin: 2px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.has-scroll-dragging .c-scrollbar_thumb {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
