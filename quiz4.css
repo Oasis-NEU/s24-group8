@@ -47,6 +47,10 @@ body {
     align-items: center;
     display: flex;
 }
+.buttons:hover {
+    background-color: black;
+    color: white;
+}
 
 .button-align {
     justify-content: center;
