@@ -57,6 +57,15 @@ body {
 
 }
 
+.button-align1 {
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    display: flex;
+    padding-right: 2rem;
+    
+}
+
 
  #navbar {
             background-color: #333;
