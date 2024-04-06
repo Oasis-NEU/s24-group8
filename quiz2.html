@@ -1,108 +1,13 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        .bodyPage {
-            width: 100%;
-            padding-top: 15rem;
-            
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-            
-        }
+<head>
+    <title>Question 5 Page</title>
+    <link rel = "stylesheet" href="quiz4.css">
 
-        .question1 {
-            text-align: center;
-        }
-
-        .btn {
-            margin: 1rem;
-            color: black;
-            border: 0.1rem solid black;
-            border-radius: 0.1rem;
-            display: block;
-            margin: auto;
-            margin-top: 2rem;
-
-        }
-
-        .btn:hover {
-            background-color: black;
-            color: white;
-        }
-
-        .buttonsQ1 {
-        
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-        }
-
-        .Q1 {
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-        }
-
-        .nextQBtn {
-            color: black;
-        }
-
-        .nextQBtn:hover {
-            background-color: black;
-            color: white;
-        }
-
-        body {
-            background-color: #f1f1f1;
-            font-family: Arial, Helvetica, sans-serif;
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-        }
-
-        #navbar {
-            background-color: #333;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            display: block;
-            transition: top 0.3s;
-        }
-
-        #navbar a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 15px;
-            text-decoration: none;
-            font-size: 17px;
-            float: right;
-            }
-
-        #navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        
-        
-
-    </style>
-
-    <div class="bodyPage"></div>
-        <div class="question1">
-            <h1>Are you a tidy person?</h1>
-        </div>
-        <div id="Q1">
-            <div class="buttonsQ1">
-                <a href="quiz3.html">
-                    <button class="btn"> Yes! </button>
-                    <button class="btn"> No! </button>
-                </a>
-            </div>
-        </div>
-    </div>
+</head>
+<body>
+   
+    <script src="script.js"> </script>
 
     <div id="navbar">
         <a style="text-decoration:none" href="minimal.html">MINIMAL</a>
@@ -124,6 +29,39 @@
       prevScrollpos = currentScrollPos;
     }
     </script>
+
+
+    <!-- the heading for the impact page --> 
+<div class="bodyContainer">  <!-- quiz --> 
+    <div class="question"> <!-- question --> 
+        <h1>How would you decorate your room?</h1>
+    </div>
+
+    <div class="images"> <!-- answer-buttons --> 
+        
+    <!-- question1 -->
+        <div id="answer-buttons">
+            <img class="col" src="room1.jpeg" width=90% > 
+            <button class="buttons"> Yes </button>
+            </a>
+        </div>
+   
+
+    <!-- question2 -->
+        <div id="answer-buttons">
+            <img class="col" src="room2.jpeg" width=90% > 
+            <button class="buttons"> No </button>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"> </script>
+
     
+    
+</body>
 
 </html>
